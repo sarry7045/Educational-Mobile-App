@@ -8,8 +8,11 @@ import {
 } from 'react-native';
 import React from 'react';
 import CourseAPI from './CoursAPI';
+import {useNavigation} from '@react-navigation/native';
 
 const Course = () => {
+  const navigation = useNavigation();
+
   const courseCard = ({item}) => {
     return (
       <View style={styles.mainContainer}>
