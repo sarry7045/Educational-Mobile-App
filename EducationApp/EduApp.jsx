@@ -1,12 +1,12 @@
-import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Course from './Course';
-import UserData from './UserData';
-import CourseDetails from './CourseDetails';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+import Course from "./Course";
+import UserData from "./UserData";
+import CourseDetails from "./CourseDetails";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,13 +16,14 @@ const EduApp = () => {
       <Stack.Navigator initialRouteName="Home">
         {/* <Stack.Screen name="Home" component={Home} /> */}
         <Stack.Screen
-          name="Valueable Education"
+          name="EduVert"
           options={{
             headerTitleStyle: {
               fontSize: 20,
             },
-          }}>
-          {props => <Home {...props} channelName={'Valueable Education'} />}
+          }}
+        >
+          {(props) => <Home {...props} channelName={"EduVert"} />}
         </Stack.Screen>
         <Stack.Screen
           name="About"
