@@ -8,17 +8,7 @@ const Menu = () => {
     <View style={style.menuContainer}>
       <TouchableOpacity
         style={style.buttonStyle}
-        onPress={() => navigation.navigate('UserData')}>
-        {/* <Text style={style.textStyle}>UserData</Text> */}
-        <Image
-          style={style.iconStyle}
-          source={require('./Images/userdata.png')}
-        />
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={style.buttonStyle}
-        onPress={() => navigation.navigate('Course')}>
+        onPress={() => navigation.navigate('Courses')}>
         {/* <Text style={style.textStyle}>Course</Text> */}
         <Image
           style={style.iconStyle}
@@ -31,12 +21,11 @@ const Menu = () => {
           }}
         /> */}
       </TouchableOpacity>
-
       <TouchableOpacity
         style={style.buttonStyle}
-        onPress={() => navigation.navigate('About')}>
-        {/* <Text style={style.textStyle}>About</Text> */}
-        <Image style={style.iconStyle} source={require('./Images/about.png')} />
+        onPress={() => navigation.navigate('Users')}>
+        {/* <Text style={style.textStyle}>UserData</Text> */}
+        <Image style={style.people} source={require('./Images/people.png')} />
       </TouchableOpacity>
 
       <TouchableOpacity
@@ -46,6 +35,16 @@ const Menu = () => {
         <Image
           style={style.iconStyle}
           source={require('./Images/contact.png')}
+        />
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={style.buttonStyle}
+        onPress={() => navigation.navigate('About')}>
+        {/* <Text style={style.textStyle}>About</Text> */}
+        <Image
+          style={style.iconStyle}
+          source={require('./Images/userdata.png')}
         />
       </TouchableOpacity>
     </View>
@@ -67,6 +66,11 @@ const style = StyleSheet.create({
   iconStyle: {
     height: 25,
     // width: '60%',
+    width: 50,
+    aspectRatio: 1,
+  },
+  people: {
+    height: 28,
     width: 50,
     aspectRatio: 1,
   },

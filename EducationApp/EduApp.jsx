@@ -16,13 +16,13 @@ const EduApp = () => {
       <Stack.Navigator initialRouteName="Home">
         {/* <Stack.Screen name="Home" component={Home} /> */}
         <Stack.Screen
-          name="Valuale Education"
+          name="Valueable Education"
           options={{
             headerTitleStyle: {
               fontSize: 20,
             },
           }}>
-          {props => <Home {...props} channelName={'Valuable Education'} />}
+          {props => <Home {...props} channelName={'Valueable Education'} />}
         </Stack.Screen>
         <Stack.Screen
           name="About"
@@ -43,7 +43,7 @@ const EduApp = () => {
           component={Contact}
         />
         <Stack.Screen
-          name="Course"
+          name="Courses"
           options={{
             headerTitleStyle: {
               fontSize: 20,
@@ -52,7 +52,7 @@ const EduApp = () => {
           component={Course}
         />
         <Stack.Screen
-          name="UserData"
+          name="Users"
           options={{
             headerTitleStyle: {
               fontSize: 20,

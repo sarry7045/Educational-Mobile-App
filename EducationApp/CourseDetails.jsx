@@ -4,7 +4,7 @@ import CourseAPI from './CoursAPI';
 
 const CourseDetails = ({navigation, route}) => {
   const id = route.params.courseId;
-  console.log(id);
+  // console.log(id);
 
   const selectedCourse = CourseAPI.find(element => {
     return id === element.id;
@@ -40,7 +40,7 @@ const CourseDetails = ({navigation, route}) => {
           <Text style={styles.price}> {selectedCourse.price} Rs. </Text>
           <TouchableOpacity
             style={styles.buttonStyle}
-            onPress={() => navigation.navigate('Course')}>
+            onPress={() => navigation.navigate('Courses')}>
             <Text style={styles.buttonText}> Join Now </Text>
           </TouchableOpacity>
         </View>

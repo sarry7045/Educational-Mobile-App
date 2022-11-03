@@ -186,12 +186,12 @@ const Page1 = ({navigation}) => {
         },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        console.log('You can use the camera');
+        // console.log('You can use the camera');
       } else {
-        console.log('Camera permission denied');
+        // console.log('Camera permission denied');
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
   const showToast = () => {
